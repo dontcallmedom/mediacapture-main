@@ -1,3 +1,3 @@
 language: node_js
 install: git clone https://github.com/w3c/respec.git
-script: phantomjs --ssl-protocol=tlsv1 respec/tools/respec2html.js -e -w getusermedia.html output.html
+script: phantomjs --ignore-ssl-errors=true --ssl-protocol=tlsv1 respec/tools/respec2html.js -e -w getusermedia.html output.html
