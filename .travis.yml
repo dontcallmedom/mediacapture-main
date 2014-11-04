@@ -3,7 +3,7 @@ install:
  - git clone https://github.com/w3c/respec.git
  - git clone https://github.com/dontcallmedom/webidl-checker.git
  - git clone https://github.com/dontcallmedom/widlproc
- - cd widlproc && make
+ - cd widlproc && make obj/widlproc
  - pip install html5lib lxml
 script:
  - phantomjs -v
