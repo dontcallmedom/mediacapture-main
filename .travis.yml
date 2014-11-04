@@ -2,7 +2,7 @@ language: python
 install:
  - git clone https://github.com/w3c/respec.git
  - git clone https://github.com/dontcallmedom/webidl-checker.git
- - pip install html5lib
+ - pip install html5lib lxml
 script:
  - phantomjs -v
  - phantomjs --ignore-ssl-errors=true --ssl-protocol=tlsv1 respec/tools/respec2html.js -e -w getusermedia.html output.html
