@@ -5,7 +5,7 @@ install:
  - git clone https://github.com/dontcallmedom/widlproc
  - git clone https://github.com/halindrome/linkchecker.git
  - sudo apt-get install cpanminus
- - cd linkchecker && cpanm --quiet --installdeps --notest . && cd ..
+ - cpanm --quiet --notest --skip-satisfied W3C::LinkChecker
  - cd widlproc && make obj/widlproc && cd ..
  - pip install html5lib lxml
 script:
